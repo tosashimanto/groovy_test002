@@ -6,8 +6,13 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'groovy'
 apply plugin: 'java'
+// アプリケーションプラグインを利用
+apply plugin: 'application'
 
 sourceCompatibility = 1.8
+
+// Mainクラスを指定(パッケージ名込み(FQCN))
+mainClassName = 'jp.co.test001.StartMain'
 
 repositories {
     mavenCentral()
